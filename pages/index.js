@@ -12,13 +12,17 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>Seattle Cloud Consulting</h1>
-        <p className={styles.subtitle}>We help clients make great things.</p>
-        
+        <p className={styles.subtitle}>We help clients do great things.</p>
+
         <div className={styles.description}>
           <p>Proven industry expertise in backend, frontend, and cloud infrastructure --</p>
-          <p>We help clients create beautiful and accessible user experiences in <span className={styles.emphasis}>React</span></p>
+          <p>We help clients create beautiful user experiences in <span className={styles.emphasis}>React and Solid.js</span></p>
           <p>We help clients build reliable and performant applications in <span className={styles.emphasis}>Javascript, Java, Python, and C#</span></p>
-          <p>We help clients deliver their applications in <span className={styles.emphasis}>AWS, Azure, and GCP</span></p>
+          <p>We help clients deliver their applications on <span className={styles.emphasis}>AWS, Azure, and GCP</span></p>
+        </div>
+
+        <div className={styles.final}>
+          <p>We help clients <span className={styles.italic}>succeed.</span></p>
         </div>
 
         {/* <div className={styles.callToAction}>
