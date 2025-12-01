@@ -24,10 +24,6 @@ export default function Home() {
         <div className={styles.final}>
           <p>We help clients <span className={styles.italic}>succeed.</span></p>
         </div>
-
-        {/* <div className={styles.callToAction}>
-          <p>Get in touch now &#8594;</p>
-        </div> */}
       </main>
     </div>
   )
