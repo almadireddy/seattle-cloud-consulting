@@ -17,7 +17,7 @@ export default function PrivacyPage() {
 
       <h2>How We Use Information</h2>
       <p>
-        Information is only used to operate the app's features, such as displaying your routines and sending step-by-step reminders.
+        Information is only used to operate the app&rsquo;s features, such as displaying your routines and sending step-by-step reminders.
       </p>
 
       <h2>Third-Party Services</h2>
