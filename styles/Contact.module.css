@@ -1,0 +1,180 @@
+.contactButton {
+  margin-top: 3rem;
+  padding: 0.75rem 1.5rem;
+  background: #eaeaea;
+  color: #080808;
+  border: 2px solid #080808;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  align-self: flex-start;
+  line-height: 1;
+  transition: background 0.15s;
+}
+
+.contactButton:hover {
+  background: #d5d5d5;
+}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal {
+  position: relative;
+  background: #eaeaea;
+  color: #080808;
+  border: none;
+  border-radius: 8px;
+  padding: 2.5rem;
+  width: 90%;
+  max-width: 500px;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  font-size: 1.75rem;
+  cursor: pointer;
+  color: inherit;
+  line-height: 1;
+}
+
+.close:hover {
+  opacity: 0.6;
+}
+
+.modalTitle {
+  margin: 0 0 1.5rem 0;
+  font-size: 1.5rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.field label {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.field input,
+.field textarea {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 1rem;
+  background: #fff;
+  color: #080808;
+}
+
+.field textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.field input:focus,
+.field textarea:focus {
+  outline: none;
+  border-color: #555;
+}
+
+.button {
+  padding: 0.75rem 1.5rem;
+  background: #eaeaea;
+  color: #080808;
+  border: 2px solid #080808;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  align-self: flex-start;
+  line-height: 1;
+  transition: background 0.15s;
+}
+
+.button:hover {
+  background: #d5d5d5;
+}
+
+.button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.successMessage {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+
+.success {
+  color: inherit;
+  font-size: 1.5rem;
+}
+
+.error {
+  color: #c0392b;
+  font-size: 1.1rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  .contactButton {
+    background: #080808;
+    color: #eaeaea;
+    border-color: #eaeaea;
+  }
+
+  .modal {
+    background: #080808;
+    color: #eaeaea;
+  }
+
+  .field input,
+  .field textarea {
+    background: #1a1a1a;
+    color: #eaeaea;
+    border-color: #444;
+  }
+
+  .field input:focus,
+  .field textarea:focus {
+    border-color: #999;
+  }
+
+  .button {
+    background: #080808;
+    color: #eaeaea;
+    border-color: #eaeaea;
+  }
+
+  .contactButton:hover,
+  .button:hover {
+    background: #1a1a1a;
+  }
+
+  .error {
+    color: #e74c3c;
+  }
+}
